@@ -14,7 +14,11 @@ public class officeSuppliesTester {
         tallyTests++;
         System.out.println("Checking the count...");
         System.out.println(a.getClicks());
-        testsPassed++;
+        if(a.getClicks() == 5){
+            tallyTests++;
+        } else {
+            System.out.println("Test failed!");
+        }
         System.out.println("Checking if the count is correct...");
         if(a.getClicks() == 5){
             System.out.println("Counter is correct");
