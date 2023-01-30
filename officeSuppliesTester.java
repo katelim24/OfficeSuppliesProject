@@ -22,12 +22,13 @@ public class officeSuppliesTester {
         } else {
             System.out.println("Failed");
         }
-        System.out.println("Results: " + testsPassed + ("/4"));
-
-        
-
+        System.out.println("Results: " + testsPassed + ("/4 tests passed"));
 
         //test folder
+        System.out.println("Creating a new folder...");
+        folder b = new folder();
+        System.out.println("Adding papers to folder...");
+        
 
         //test snack cabinet
     }
