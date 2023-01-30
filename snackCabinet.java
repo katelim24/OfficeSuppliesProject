@@ -3,6 +3,7 @@ public class snackCabinet {
     private String chips;
     private String candy;
     private String drinks;
+    private boolean status;
 
     //constructors
     public snackCabinet(String myChips, String myCandy, String myDrinks){
@@ -13,15 +14,28 @@ public class snackCabinet {
 
     //methods
 
-    public String getChips;
+    public String getChips(){
+        return chips;
+    }
 
-    public String getCandy;
+    public String getCandy(){
+        return candy;
+    }
 
-    public String getDrinks;
+    public String getDrinks(){
+        return drinks;
+    }
 
-    public void openCabinet;
+    public void changeStatus(){
+        status = !status;
+    }
 
-    public void closeCabinet;
+    public boolean getStatus(){
+        return status;
+    }
 
-    public void randomSnack;
+    public void randomSnack(){
+        int position = Math.random()* snackCabinet.length;
+        return 
+    }
 }
