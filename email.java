@@ -23,6 +23,10 @@ public class email {
     }
 
     public void recieveEmail(){
-        
+
+    }
+
+    public String printEmails(){
+
     }
 }
