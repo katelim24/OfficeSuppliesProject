@@ -6,7 +6,7 @@ public class email {
     private String inbox;
 
     //constructors
-    public email(String myUsername, String myPassword, String myEmail, String myInbox){
+    public email(String myUsername, String myPassword){
         username = "panther";
         password = "123456";
         email = myEmail;

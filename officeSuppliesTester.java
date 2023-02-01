@@ -1,6 +1,6 @@
 public class officeSuppliesTester {
     public static void main(String[] args) {
-        //test tally counter  
+        //testing tally counter  
         int tallyTests = 0; 
         System.out.println("Creating a new tally counter...");
         tallyCounter a = new tallyCounter();
@@ -28,7 +28,7 @@ public class officeSuppliesTester {
         }
         System.out.println("Results: " + tallyTests + ("/4 tests passed"));
 
-        //test folder
+        //testing folder
         int folderTests = 0; 
         System.out.println("Creating a new folder...");
         folder b = new folder(0);
@@ -69,6 +69,13 @@ public class officeSuppliesTester {
         }
         System.out.println("Results: " + folderTests + ("/6 tests passed"));
 
-        //test snack cabinet
+        //testing email
+        System.out.println("Testing if panther is the username...");
+        email c = new email("poly", "123456")
+        if(c.checkUsername("panther") == true){
+            System.out.println("username correct!");
+        } else{
+            System.out.println("username false. try again");
+        }
     }
 }
