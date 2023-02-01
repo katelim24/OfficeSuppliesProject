@@ -6,10 +6,9 @@ public class email {
     private String inbox;
 
     //constructors
-    public email(String myUsername, String myPassword, String myEmail, String myInbox){
+    public email(){
         username = "panther";
         password = "123456";
-        email = myEmail;
         inbox = "";
     }
 
