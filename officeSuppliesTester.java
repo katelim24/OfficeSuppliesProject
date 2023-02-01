@@ -1,3 +1,5 @@
+import javax.swing.event.SwingPropertyChangeSupport;
+
 public class officeSuppliesTester {
     public static void main(String[] args) {
         //testing tally counter  
@@ -72,7 +74,7 @@ public class officeSuppliesTester {
         //testing email
         int emailTests = 0;
         System.out.println("Testing if panther is the username...");
-        email c = new email("poly", "123456");
+        email c = new email();
         if(c.checkUsername("panther") == true){
             System.out.println("username correct!");
             emailTests++;
@@ -80,6 +82,18 @@ public class officeSuppliesTester {
             System.out.println("username false. try again");
         }
 
-        
+        System.out.println("Recieving an email...");
+        c.recieveEmail("Email 1");
+
+        System.out.println("Priniting emails...");
+        c.printEmails();
+
+        if(c.printEmails() == ""){
+            System.out.println("Test failed");
+        } else {
+            System.out.println("Test passed!");
+            emailTests++;
+            
+        }
     }
 }
