@@ -22,7 +22,7 @@ public class email {
         }
     }
 
-    public boolean checkPassword(int curr){
+    public boolean checkPassword(String curr){
         for(int i = 0; i < password.length(); i++){
             if(curr = password.substring(i, i+1)){
                 return true;

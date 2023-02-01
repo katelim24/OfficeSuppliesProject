@@ -70,12 +70,16 @@ public class officeSuppliesTester {
         System.out.println("Results: " + folderTests + ("/6 tests passed"));
 
         //testing email
+        int emailTests = 0;
         System.out.println("Testing if panther is the username...");
-        email c = new email("poly", "123456")
+        email c = new email("poly", "123456");
         if(c.checkUsername("panther") == true){
             System.out.println("username correct!");
+            emailTests++;
         } else{
             System.out.println("username false. try again");
         }
+
+        
     }
 }
