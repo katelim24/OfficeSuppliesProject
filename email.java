@@ -9,7 +9,6 @@ public class email {
     public email(String myUsername, String myPassword){
         username = "panther";
         password = "123456";
-        email = myEmail;
         inbox = "";
     }
 
