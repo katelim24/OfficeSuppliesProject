@@ -8,7 +8,7 @@ public class email {
     //constructors
     public email(String myUsername, String myPassword, String myEmail, String myInbox){
         username = "panther";
-        password = "apcompsci23";
+        password = "123456";
         email = myEmail;
         inbox = "";
     }
@@ -23,10 +23,10 @@ public class email {
     }
 
     public boolean checkPassword(String myPassword){
-        if(myPassword == password){
-            return true;
-        } else {
-            return false;
+        for(int i = 0; i < password.length(); i++){
+            if(myPassword.substring(i, i+1) = password.substring(i, i+1)){
+                return 
+            }
         }
     }
 
