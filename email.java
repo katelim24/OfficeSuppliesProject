@@ -14,12 +14,20 @@ public class email {
     }
 
     //methods
-    public boolean checkUsername(){
-
+    public boolean checkUsername(String myUsername){
+        if(myUsername == username){
+            return true;
+        } else {
+            return false;
+        }
     }
 
-    public boolean checkPassword(){
-
+    public boolean checkPassword(String myPassword){
+        if(myPassword == password){
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public void recieveEmail(){
