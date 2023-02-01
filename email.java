@@ -25,7 +25,9 @@ public class email {
     public boolean checkPassword(String myPassword){
         for(int i = 0; i < password.length(); i++){
             int count = 0;
-            if(myPassword.substring(i, i+1) = password.substring(i, i+1)){
+            int curr = i;
+            int next = i + 1;
+            if(curr == 1){
                 count++;
                 return "digit correct, enter next number";
             } else{
