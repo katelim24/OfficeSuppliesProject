@@ -2,15 +2,15 @@ public class email {
     //fields
     private String username;
     private String password;
-    private String draft;
+    private String email;
     private String inbox;
 
     //constructors
-    public email(String myUsername, String myPassword, String myDraft, String myInbox){
+    public email(String myUsername, String myPassword, String myEmail, String myInbox){
         username = "panther";
         password = "apcompsci23";
-        draft = myDraft;
-        inbox = myInbox;
+        email = myEmail;
+        inbox = "";
     }
 
     //methods
@@ -30,11 +30,11 @@ public class email {
         }
     }
 
-    public void recieveEmail(){
-
+    public void recieveEmail(String email){
+        inbox += email;
     }
 
     public String printEmails(){
-
+        return inbox;
     }
 }
