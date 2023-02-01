@@ -82,6 +82,14 @@ public class officeSuppliesTester {
             System.out.println("username false. try again");
         }
 
+        System.out.println("Testing if 123456 is the password...");
+        if(c.checkPassword("123456") == true){
+            System.out.println("password correct!");
+            emailTests++;
+        } else{
+            System.out.println("password false. try again");
+        }
+
         System.out.println("Recieving an email...");
         c.recieveEmail("Email 1");
 
@@ -92,8 +100,9 @@ public class officeSuppliesTester {
             System.out.println("Test failed");
         } else {
             System.out.println("Test passed!");
-            emailTests++;
-            
+            emailTests++;   
         }
+        System.out.println("Results: " + emailTests + ("/3 tests passed"));
     }
+     
 }

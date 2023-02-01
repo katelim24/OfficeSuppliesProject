@@ -23,12 +23,10 @@ public class email {
 
     public boolean checkPassword(String curr){
         for(int i = 0; i < password.length(); i++){
-            if(curr = password.substring(i, i+1)){
-                return true;
-            } else{
+            if(!curr.substring(i, i+1).equals(password.substring(i, i+1))){
                 return false;
             }
-        }
+        } return true;
     }
 
     public void recieveEmail(String email){
