@@ -22,18 +22,12 @@ public class email {
         }
     }
 
-    public boolean checkPassword(String myPassword){
+    public boolean checkPassword(int curr){
         for(int i = 0; i < password.length(); i++){
-            int password = 1;
-            int count = 0;
-            int curr = i;
-            int next = i + 1;
-            if(curr == password){
-                count++;
-                password++;
-                return "digit correct, enter next number";
+            if(curr = password.substring(i, i+1)){
+                return true;
             } else{
-                return "wrong digit,retry";
+                return false;
             }
         }
     }
